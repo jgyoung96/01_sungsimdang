@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>01_test</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#wrap{
+			width: 100%;
+			height: 100%;
+			/*border:1px solid blue;*/
+		}
+		#wrap>ul{
+			width: 100px;
+			height: 100px; 
+			background:url(images/ch3.png);
+			animation:ch 1.3s steps(6) infinite;
+		}
+		@keyframes ch{
+			from{background-position: 0px;}
+			to{background-position: -600px;}
+		}
+		#cha2{
+			width: 100%;
+			height: 100%;
+			/*border:1px solid blue;*/
+		}
+		#cha2>ul{
+			width: 100px;
+			height: 100px; 
+			background:url(images/ch2.png);
+			animation:cha 1.2s steps(6) infinite;
+		}
+		@keyframes cha{
+			from{background-position: 0px;}
+			to{background-position: -600px;}
+		}
+		#cha3{
+			width: 100%;
+			height: 100%;
+			/*border:1px solid blue;*/
+		}
+		#cha3>ul{
+			width: 100px;
+			height: 100px; 
+			background:url(images/ch1.png);
+			animation:chaa 1.1s steps(9) infinite;
+		}
+		@keyframes chaa{
+			from{background-position: 0px;}
+			to{background-position: -900px;}
+		}
+		#cha4{
+			width: 100%;
+			height: 100%;
+			/*border:1px solid blue;*/
+		}
+		#cha4>ul{
+			width: 100px;
+			height: 100px; 
+			background:url(images/ch4.png);
+			animation:chaas 1s steps(7) infinite;
+		}
+		@keyframes chaas{
+			from{background-position: 0px;}
+			to{background-position: -700px;}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<ul class="ch"></ul>
+	</div>
+	<div id="cha2">
+		<ul class="ch2"></ul>
+	</div>
+	<div id="cha3">
+		<ul class="ch3"></ul>
+	</div>
+	<div id="cha4">
+		<ul class="ch4"></ul>
+	</div>
+</body>
+</html>
